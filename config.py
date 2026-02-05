@@ -1,18 +1,17 @@
-# линк к системной бд
 POSTGRES_SYS = {
-    'host': '192.168.1.40',
-    'port': 5432,
-    'user': 'postgres',
-    'password': 'pswd',
-    'database': 'postgres'
+    'host': '192.168.1.41',     # Системный сервер PostgreSQL
+    'port': 5432,              # Стандартный порт
+    'user': 'postgres',        # Суперпользователь
+    'password': 'pswd',        # Пароль
+    'database': 'postgres'     # Служебная БД для админских операций
 }
 
 
-# линк к рабочей бд
+
 POSTGRES_APP = {
-    'host': '192.168.1.40',
+    'host': '192.168.1.41',     # Тот же сервер
     'port': 5432,
     'user': 'postgres',
     'password': 'pswd',
-    'dbname': 'users_db'
+    'dbname': 'users_db'        # НОВЫЙ ключ для рабочей БД!
 }
